@@ -1,0 +1,19 @@
+.container{
+    max-width : 600px;
+    min-width: none;
+    margin: auto;
+}
+
+.images{
+    width: 100%;
+    height: 400px;
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+}
+
+.headers{
+    text-align: center;
+}
