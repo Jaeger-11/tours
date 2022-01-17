@@ -30,11 +30,14 @@ const App = () => {
         fetchData();
     }, [])
 
+    // THIS IS AN ONCLICK FUNCTION FOR THE NOT INTERESTED BUTTON TO REMOVE THE PRESENT TOUR.
     const removeTour = (id) => {
         const newPlaces = places.filter((place) => place.id !== id);
         setPlaces(newPlaces);
     }
 
+    // FUNCTION BUILT TO RESTORE ALL EXISTING TOURS 
+    // To rerun the fetchData function 
     const restoreTours = () =>{
       fetchData();
     }
