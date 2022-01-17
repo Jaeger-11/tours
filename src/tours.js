@@ -4,10 +4,15 @@ import Tour from './tour';
 const Tours = ({places, removeTour}) => {
     return (
         <div>
-            <h1 className="headers">Our Tours</h1>
-            {places.map((place) => {
-            return <Tour key={place.id} {...place} removeTour ={removeTour}/>
-            })}
+            <nav className='navBar'>
+                <h1 className="headers">Our Tours</h1>
+                <p className='underline'></p>
+            </nav>
+            <main className='toursDiv'>
+                {places.map((place) => {
+                return <Tour key={place.id} {...place} removeTour ={removeTour}/>
+                })}
+            </main>
         </div>
     );
 }

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Tours from "./tours";
-import './tours.css'
+
 
 const url = 'https://course-api.com/react-tours-project';
 
@@ -53,9 +53,9 @@ const App = () => {
 
     if(places.length === 0){
       return (
-        <div>
-          <h1>No Tours Left</h1>
-          <button onClick={restoreTours}>Refresh</button>
+        <div >
+          <h1 className="headers">No Tours Left</h1>
+          <button onClick={restoreTours} className="btn">Refresh</button>
         </div>
       )
     }
