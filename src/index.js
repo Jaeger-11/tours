@@ -2,9 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './Tours Project/App';
+import Box from './Review Project/box';
+import Container from './Accordion Project/container'
 
 ReactDOM.render(
-    <App/>,
+    <Box/>,
   document.getElementById('root')
 );
 

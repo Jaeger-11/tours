@@ -1,4 +1,4 @@
-const reviews = [
+ const reviews = [
   {
     id: 1,
     name: 'susan smith',
