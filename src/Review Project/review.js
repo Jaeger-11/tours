@@ -40,22 +40,22 @@ const Review = () => {
 
     return(
         <article className='review' key={id}>
-            <div className='img-container'>
-                <img src={image} alt='Profile display'/>
-                <span className='quote-icon'></span>
+            <div className='reviewImageContainer'>
+                <img src={image} alt='Profile display' className='reviewImages'/>
+                <span className='quoteIcon'></span>
             </div>
-            <h4 className='author'>{name}</h4>
-            <p className='job'>{job}</p>
-            <p className='info'>{text}</p>
-            <div className='button-container'>
-                <button className='prev-btn' onClick={Previous}>
+            <h4 className='reviewAuthor'>{name}</h4>
+            <p className='reviewJob'>{job}</p>
+            <p className='reviewInfo'>{text}</p>
+            <div className='reviewButtonContainer'>
+                <button className='arrowLeft' onClick={Previous}>
                     <FaAngleLeft/>
                 </button>
-                <button className='next-btn' onClick={Next}>
+                <button className='arrowRight' onClick={Next}>
                 <FaAngleRight/>
                 </button>
             </div>
-            <button className='random-btn' onClick={Random}>Surprise Me</button>
+            <button className='randomBtn' onClick={Random}>Surprise Me</button>
         </article>
     )
         

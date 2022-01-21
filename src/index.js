@@ -6,7 +6,7 @@ import Box from './Review Project/box';
 import Container from './Accordion Project/container'
 
 ReactDOM.render(
-    <Box/>,
+    <Container/>,
   document.getElementById('root')
 );
 
