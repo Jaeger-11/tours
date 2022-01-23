@@ -3,10 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './Tours Project/App';
 import Box from './Review Project/box';
-import Container from './Accordion Project/container'
+import Container from './Accordion Project/container';
+import Main from './Menu Project/main';
 
 ReactDOM.render(
-    <Container/>,
+    <Main/>,
   document.getElementById('root')
 );
 

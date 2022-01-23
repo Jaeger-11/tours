@@ -157,14 +157,19 @@ section{
   justify-content: space-between;
 }
 
-/* .arrowLeft{
 
+/* STYLING FOR THE MENU PROJECT */
+.menuDiv{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
-.arrowRight{
-
+.menuSection{
+  display: flex;
 }
 
-.randomBtn{
-
-} */
+.menuImage{
+  width: 150px;
+  height: 150px;
+  display: block;
+}
