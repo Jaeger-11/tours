@@ -1,11 +1,16 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import person from './data';
 import {FaAngleRight, FaAngleLeft} from "react-icons/fa";
 
 const Review = () => {
     const [index, setIndex] = useState(0);
     const {id, name, job, image, text} = person[index];
-    console.log(person);
+    console.log(person[index]);
+
+    useEffect(() => {
+        let slide = setInterval(() => {setIndex(CheckNumber(index + 1))}, 6000)
+        return () => clearInterval(slide)
+    }, [index])
 
     const CheckNumber = (number) => {
         if (number > person.length - 1){
@@ -39,7 +44,7 @@ const Review = () => {
     }
 
     return(
-        <article className='review' key={id}>
+        <div className='review' key={id}>
             <div className='reviewImageContainer'>
                 <img src={image} alt='Profile display' className='reviewImages'/>
                 <span className='quoteIcon'></span>
@@ -52,11 +57,11 @@ const Review = () => {
                     <FaAngleLeft/>
                 </button>
                 <button className='arrowRight' onClick={Next}>
-                <FaAngleRight/>
+                    <FaAngleRight/>
                 </button>
             </div>
             <button className='randomBtn' onClick={Random}>Surprise Me</button>
-        </article>
+        </div>
     )
         
 }
