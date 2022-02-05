@@ -63,7 +63,6 @@ const Review = () => {
             <button className='randomBtn' onClick={Random}>Surprise Me</button>
         </div>
     )
-        
 }
 
 export default Review;
