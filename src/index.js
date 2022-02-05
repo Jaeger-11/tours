@@ -8,10 +8,11 @@ import './index.css';
 // import Tab from './Tab Project/tab';
 // import Slider from './Slider Project/slider';
 // import Lorem from './Lorem Ipsum Project/lorem';
-import Generator from './Color Generator/generator';
+// import Generator from './Color Generator/generator';
+import Grocery from './Grocery Bud/grocery';
 
 ReactDOM.render(
-    <Generator/>,
+    <Grrocery/>,
   document.getElementById('root')
 );
 
